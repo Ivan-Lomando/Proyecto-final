@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-color: #F5EBEB;
+  font-family: "Roboto"; }
+  header nav {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center; }
+    header nav div img {
+      height: 75px; }
+    header nav div ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px; }
+      header nav div ul li {
+        display: flex;
+        justify-content: center; }
+        header nav div ul li a {
+          text-decoration: none;
+          color: black;
+          padding: 5px;
+          text-align: center; }
+          header nav div ul li a:hover {
+            background-color: #867070;
+            color: white; }
+
+@media (max-width: 767px) {
+  nav {
+    display: block;
+    text-align: center; }
+    nav .logo {
+      margin-bottom: 10px; }
+    nav ul {
+      flex-direction: column; }
+      nav ul li {
+        margin-top: 5px 0; } }
+
+footer {
+  background-color: #F5EBEB;
+  padding: 20px;
+  font-family: "Roboto";
+  display: flex;
+  justify-content: space-between; }
+  footer .redes-sociales {
+    display: flex;
+    align-items: center; }
+    footer .redes-sociales a {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      text-decoration: none;
+      color: black; }
+  footer .telefono {
+    display: flex;
+    align-items: center; }
+  footer .ubicacion {
+    display: flex;
+    align-items: center; }
+    footer .ubicacion div {
+      display: flex;
+      align-items: center; }
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center; }
+  .redes-sociales,
+  .telefono,
+  .ubicacion {
+    flex-grow: unset; } }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main {
+  display: flex;
+  flex-wrap: wrap; }
+
+.imagen1-main {
+  width: 100%;
+  height: auto;
+  order: 1; }
+  .imagen1-main img {
+    width: 100%;
+    height: 620px; }
+
+.imagen2-main {
+  width: 33.3%;
+  height: auto;
+  order: 3; }
+  .imagen2-main img {
+    width: 100%;
+    height: auto; }
+
+.main-importante {
+  width: 66.6%;
+  order: 2; }
+
+.titulo-main {
+  text-align: center;
+  font-family: "Lato";
+  font-size: 50px;
+  padding-bottom: 20px; }
+
+parrafo-main {
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: #F5EBEB;
+  font-family: "Roboto"; }
+
+@media (max-width: 768px) {
+  .imagen2-main {
+    width: 100%; }
+  .main-importante {
+    width: 100%; } }
+
+.main-actividaes {
+  background-color: #F5EBEB;
+  margin: 5px 0 5px 0; }
+
+.main-activdades-prncipal {
+  margin: 10px; }
+  .main-activdades-prncipal h1 {
+    text-align: center;
+    font-family: "Lato";
+    font-size: 30px; }
+  .main-activdades-prncipal p {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 15px; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  height: 100%; }
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; }
+
+.card img {
+  width: 100%;
+  height: auto; }
+
+.card-content {
+  padding: 20px; }
+
+.card-content h2 {
+  font-size: 20px;
+  font-family: "Lato";
+  margin-bottom: 10px; }
+
+.card-content p {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: #666; }
+
+@media (max-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    height: 100%; }
+    .cards .card {
+      max-width: 100%; } }
+
+@media (max-width: 768px) and (min-width: 481px) and (max-width: 800px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: 100%; }
+    .cards .card {
+      max-width: 600px; } }
+
+main {
+  background-color: #F5EBEB;
+  margin: 10px 0 10px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.titulo-contacto {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Lato";
+  font-size: 30px; }
+
+.parrafo-contacto {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Roboto";
+  font-size: 15px; }
+
+.main-contactos-principal {
+  text-align: center;
+  padding: 20px;
+  background-color: #F5EBEB; }
+
+.form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; }
+
+.contacto-form {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #D5B4B4; }
+
+.contacto-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Roboto"; }
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px; }
+
+.contacto-form button {
+  background-color: #867070;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+main {
+  background-color: #F5EBEB; }
+  main section {
+    padding: 20px; }
+    main section h1 {
+      text-align: center;
+      font-family: "Lato";
+      font-size: 30px; }
+    main section p {
+      text-align: center;
+      font-family: "Roboto";
+      font-size: 15px; }
+  main a {
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto"; }
+
+@media (max-width: 485px) {
+  .container-ubicacion {
+    display: none; } }
+
+.contenedor-quienes {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center; }
+  .contenedor-quienes h1 {
+    font-family: "Lato";
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px; }
+  .contenedor-quienes h3 {
+    font-family: "Lato";
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px; }
+  .contenedor-quienes p {
+    font-family: "Roboto";
+    text-align: justify-all;
+    margin-top: 10px;
+    font-size: 20px;
+    margin: 20px; }
+
+.img1 {
+  border-radius: 15px;
+  width: 450px;
+  height: 350px;
+  float: right;
+  margin: 20px; }
+
+@media (max-width: 485px) {
+  .img1 {
+    border-radius: 15px;
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    float: none; } }

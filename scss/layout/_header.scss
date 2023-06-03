@@ -1,0 +1,59 @@
+header{
+    background-color: $color-principal;
+    font-family: $fuente-texto;
+    nav{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    div{
+        img{
+            height: 75px;
+        }
+    }
+    div{
+        ul{
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 10px;
+            li{
+                display: flex;
+                justify-content: center;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    padding: 5px;
+                    text-align: center;
+                    &:hover{
+                        background-color: $color-secundario;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    nav{
+        display: block;
+        text-align: center;
+        .logo{
+            margin-bottom: 10px;
+        }
+        ul{
+            flex-direction: column;
+        li{
+            margin-top: 5px 0;
+        }
+        }
+    }
+      }

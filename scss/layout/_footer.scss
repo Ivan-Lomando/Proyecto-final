@@ -1,0 +1,52 @@
+footer {
+    background-color: $color-principal;
+    padding: 20px;
+    font-family:$fuente-texto;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    .redes-sociales {
+      display: flex;
+      align-items: center;
+      
+
+      a {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        text-decoration: none;
+        color: black ;
+        
+      }
+    }
+    
+    .telefono {
+      display: flex;
+      align-items: center;
+    }
+    
+    .ubicacion {
+      display: flex;
+      align-items: center;
+      
+      div {
+        display: flex;
+        align-items: center;
+      }
+    }
+  
+  }
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .redes-sociales,
+    .telefono,
+    .ubicacion {
+      flex-grow: unset;
+
+    }
+  }
